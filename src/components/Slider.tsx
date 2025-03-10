@@ -26,10 +26,18 @@ const slides = [
     },
 ]
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Slider = () => {
      const [current, setcurrent] = useState(0);
+
+     useEffect(() => {
+        const interval = setInterval(() => {
+         setcurrent((prev) =>(prev === slides.length - 1 ? 0 : prev + 1))
+        },3000)
+
+        return () => clearInterval(interval)
+     },[])
   return (
     <div className=' h-[calc(100vh-80px)] overflow-hidden'>
       <div className=' w-max h-full flex transition-all ease-in-out duration-1000'
