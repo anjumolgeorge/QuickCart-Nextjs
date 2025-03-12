@@ -20,7 +20,7 @@ const slides = [
         id:3,
         title: "spring.webp",
         description:"Sale, Up to 50% OFF!",
-        img:"https://www.istockphoto.com/photo/a-back-view-of-a-woman-holding-shopping-bags-in-front-of-a-store-window-gm2155795543-576589822?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_bottombanner_media&utm_term=spring+sale+collections",
+        img:"spring.webp",
         url:"/",
         bg:"bg-gradient-to-r from-blue-50 to-yellow-50"
     },
